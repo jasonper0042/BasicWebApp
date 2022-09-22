@@ -17,7 +17,7 @@ public class QueryProcessor {
 		String[] nums = q[1].split(",");
 		int max = 0;
 		for (String n : nums) {
-			if (n > max) max = n;
+			if (Integer.parseInt(n) > max) max = Integer.parseInt(n);
 		}
 		return max + "";
 	}
