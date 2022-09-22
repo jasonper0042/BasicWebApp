@@ -16,7 +16,7 @@ public class QueryProcessor {
 		String[] q = query.split(":");
 		String[] nums = q[1].split(",");
 		int max = 0;
-		for (int n : nums) {
+		for (String n : nums) {
 			if (n > max) max = n;
 		}
 		return max + "";
