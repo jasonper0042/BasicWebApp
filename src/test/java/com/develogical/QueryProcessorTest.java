@@ -29,4 +29,9 @@ public class QueryProcessorTest {
     public void isCaseSensitive() throws Exception {
         assertThat(queryProcessor.process("fitness"), containsString("capacity"));
     }
+
+    @Test
+    public void saysName() throws Exception {
+        assertThat(queryProcessor.process("What is your name"), containsString("Mycelium"));
+    }
 }
