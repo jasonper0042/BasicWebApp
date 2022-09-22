@@ -20,6 +20,8 @@ public class QueryProcessor {
 		//	if (Integer.parseInt(n) > max) max = Integer.parseInt(n);
 		//}
 		return "20455";
+	} else if (query.toLowerCase().contains("banana")) {
+	    return "yello";
 	}
         return "";
     }
