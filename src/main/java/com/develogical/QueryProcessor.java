@@ -21,7 +21,7 @@ public class QueryProcessor {
 		//}
 		return "20455";
 	} else if (query.toLowerCase().contains("banana")) {
-	    return "yello";
+	    return "yellow";
 	}
         return "";
     }
