@@ -12,6 +12,15 @@ public class QueryProcessor {
 	} else if (query.toLowerCase().contains("what is your name")) {
 	    return "jpcisp";
 	}
+	else if (query.toLowerCase().contains(" is the largest")) {
+		String[] q = query.split(":");
+		String[] nums = q[1].split(",");
+		int max = 0;
+		for (int n : nums) {
+			if (n > max) max = n;
+		}
+		return max + "";
+	}
         return "";
     }
 }
